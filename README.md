@@ -129,4 +129,4 @@ Would you like me to remove all 3 items, or would you like to keep specific ones
 ---
 
 ## License
-MIT License. Copyright (c) 2026 itszshinnn.
+[MIT](LICENSE). Copyright (c) 2026 itszshinnn.
