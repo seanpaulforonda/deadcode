@@ -118,6 +118,14 @@ Scan and audit this project for unused code and leftover declarations.
 Would you like me to remove all 3 items, or would you like to keep specific ones?
 ```
 
+### Risk Level Classifications
+
+Every flagged item in the audit report includes a risk evaluation so you know what can be removed safely versus what requires review:
+
+* **Zero risk**: Completely safe to delete immediately. Includes uncalled local functions, unused imports, redundant duplicate CSS rules, and unreachable logic with zero references across the repository.
+* **Low risk**: Code has zero static references, but may be invoked through event emitters or string lookups. A quick check is recommended before removal.
+* **Verification recommended**: Publicly exported package methods, framework hooks, or dynamic reflection targets. The agent flags them for manual confirmation rather than automated removal.
+
 ---
 
 ## Core Philosophy
