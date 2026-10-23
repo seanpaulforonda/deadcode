@@ -66,11 +66,10 @@ git clone https://github.com/itszshinnn/deadcode.git ~/.claude/skills/deadcode
 ```
 
 ### Quick Install via Agent Prompt
-Share the link in your agent chat session:
+Paste this prompt directly into your agent chat session:
 ```text
-https://github.com/itszshinnn/deadcode /github-repo-explainer
+Read https://github.com/itszshinnn/deadcode and install the deadcode skill into my agent skills directory so I can run /deadcode.
 ```
-Then ask the agent to install the skill.
 
 ---
 
