@@ -1,6 +1,13 @@
 # deadcode
 
-Universal dead code, unused logic, and redundancy auditor for AI coding agents.
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Standard-black?style=flat-square)](https://agentskills.io)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+
+An Agent Skills compatible tool that scans, detects, and audits dead code, unused imports, duplicate rules, and unreachable logic across any programming language. Delivers structured reports with exact line numbers and risk assessments before touching any file.
+
+Compatible with Antigravity, Claude Code, and other AI coding agents.
+
+---
 
 ## Overview
 `deadcode` is a lightweight audit skill for AI coding agents across any programming language. It scans repositories for uncalled functions, unused imports, dead CSS selectors, unreachable branches, and abandoned code blocks, delivering a structured report with line numbers before touching any file.
