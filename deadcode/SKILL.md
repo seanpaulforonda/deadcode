@@ -3,7 +3,7 @@ name: deadcode
 description: Universal dead code, unused logic, and redundancy auditor across any programming language. Scans repositories for uncalled functions, unreachable branches, unused imports, duplicate rules, and inactive commented-out code. Triggers with /deadcode.
 license: MIT
 metadata:
-  author: itszshinnn
+  author: seanpaulforonda
 ---
 
 # Universal Dead Code Auditor (deadcode)

@@ -56,19 +56,19 @@ When invoked, `deadcode` detects your project stack and uses native linters if p
 ### For Antigravity
 Clone this repository into your local Antigravity skills directory:
 ```bash
-git clone https://github.com/itszshinnn/deadcode.git C:\Users\<Username>\.gemini\config\skills\deadcode
+git clone https://github.com/seanpaulforonda/deadcode.git C:\Users\<Username>\.gemini\config\skills\deadcode
 ```
 
 ### For Claude Code
 Clone into your global or project skills folder:
 ```bash
-git clone https://github.com/itszshinnn/deadcode.git ~/.claude/skills/deadcode
+git clone https://github.com/seanpaulforonda/deadcode.git ~/.claude/skills/deadcode
 ```
 
 ### Quick Install via Agent Prompt
 Paste this prompt directly into your agent chat session:
 ```text
-Read https://github.com/itszshinnn/deadcode and install the deadcode skill into my agent skills directory so I can run /deadcode.
+Read https://github.com/seanpaulforonda/deadcode and install the deadcode skill into my agent skills directory so I can run /deadcode.
 ```
 
 ---
@@ -141,4 +141,4 @@ Every flagged item in the audit report provides four data points so you can eval
 ---
 
 ## License
-[MIT](LICENSE). Copyright (c) 2026 itszshinnn.
+[MIT](LICENSE). Copyright (c) 2026 seanpaulforonda.
