@@ -118,13 +118,17 @@ Scan and audit this project for unused code and leftover declarations.
 Would you like me to remove all 3 items, or would you like to keep specific ones?
 ```
 
-### Risk Level Classifications
+### Understanding the Audit Report Fields
 
-Every flagged item in the audit report includes a risk evaluation so you know what can be removed safely versus what requires review:
+Every flagged item in the audit report provides four data points so you can evaluate each finding quickly:
 
-* **Zero risk**: Completely safe to delete immediately. Includes uncalled local functions, unused imports, redundant duplicate CSS rules, and unreachable logic with zero references across the repository.
-* **Low risk**: Code has zero static references, but may be invoked through event emitters or string lookups. A quick check is recommended before removal.
-* **Verification recommended**: Publicly exported package methods, framework hooks, or dynamic reflection targets. The agent flags them for manual confirmation rather than automated removal.
+* **File**: The exact repository file path and line number range where the dead code lives.
+* **Code**: A concise snippet or function signature representing the target declaration or statement.
+* **Finding**: The concrete static analysis evidence explaining why the item was flagged (for example, zero call sites across the codebase, unreferenced import, or statement placed after return).
+* **Risk level**: The safety tier determining how safe the item is to remove:
+  * **Zero risk**: Completely safe to delete immediately. Includes uncalled local functions, unused imports, redundant CSS media queries, and unreachable logic with zero references across the repository.
+  * **Low risk**: Code has zero static references, but may be invoked via string lookups or event emitters. A quick developer check is recommended before removal.
+  * **Verification recommended**: Publicly exported package methods, library APIs, or dynamic reflection targets. The agent flags them for manual confirmation rather than automated removal.
 
 ---
 
